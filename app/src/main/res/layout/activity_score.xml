@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scoresbackground"
+    tools:context=".Activity.ScoreActivity">
+
+    <TextView
+        android:id="@+id/scoretext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_100sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Your Score Is"
+        android:textStyle="bold"
+        android:textColor="#D81B60"
+        android:gravity="center"
+        android:textSize="@dimen/_30sdp"></TextView>
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/no_ofstars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scoretext"
+        ></androidx.appcompat.widget.AppCompatRatingBar>
+
+    <TextView
+        android:id="@+id/fdbck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/no_ofstars"
+        android:textSize="@dimen/_30sdp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        android:fontFamily="cursive"></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

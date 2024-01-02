@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EarlyLearningSkillsApp</string>
+    <string name="excellent_msg">Excelent!</string>
+    <string name="good_msg">Good Job!</string>
+    <string name="keep_up_msg">Keep it up!</string>
+    <string name="try_again_msg">Try Again Next time.</string>
+    <string name="name">username</string>
+    <string name="password">password</string>
+    <string name="checkBox">checkbox</string>
+</resources>

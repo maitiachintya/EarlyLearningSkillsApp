@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/morningimg"
+    tools:context=".Activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/homesign"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@drawable/home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/login"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="@dimen/_190sdp"></ImageView>
+
+    <ImageView
+        android:id="@+id/login"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@drawable/login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"></ImageView>
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="Enter Username"
+        android:textColor="#FFFFFFFF"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20sdp"></EditText>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_username"
+        android:inputType="numberPassword"
+        android:hint="Enter Password"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_20sdp"></EditText>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chk_bx"
+        android:text="Login"
+        android:textSize="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="cursive"></Button>
+
+    <CheckBox
+        android:id="@+id/chk_bx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password"
+        android:text="Remember my Credintial"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="#ffff"
+        android:layout_marginTop="@dimen/_5sdp"
+        ></CheckBox>
+</androidx.constraintlayout.widget.ConstraintLayout>
